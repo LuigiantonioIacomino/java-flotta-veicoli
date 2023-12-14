@@ -7,9 +7,7 @@ public class GestoreFlotta {
     private ArrayList<Veicolo> listOfVehicle = new ArrayList<>();
 
     //constructor
-    public GestoreFlotta(ArrayList<Veicolo> listOfVehicle) {
-        this.listOfVehicle = listOfVehicle;
-    }
+
 
     //methods
     public void AddVehicle(Veicolo vehicle) {
@@ -21,6 +19,7 @@ public class GestoreFlotta {
         }
         if (check == true) {
             listOfVehicle.add(vehicle);
+            System.out.println("Veicolo aggiunto");
         } else {
             System.out.println("non puoi inserire il veicolo perche è gia presente");
         }
@@ -56,6 +55,8 @@ public class GestoreFlotta {
             return vehicle_found;
         }
 
-
+    public ArrayList<Veicolo> getListOfVehicle() {
+        return listOfVehicle;
     }
+}
 

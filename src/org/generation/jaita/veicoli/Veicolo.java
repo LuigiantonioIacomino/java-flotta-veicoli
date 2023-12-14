@@ -12,4 +12,16 @@ public class Veicolo {
     public int getNumberOfPlate() {
         return numberOfPlate;
     }
+
+    public int getYearOfImmatricolation() {
+        return yearOfImmatricolation;
+    }
+
+    @Override
+    public String toString() {
+        return "Veicolo{" +
+                "numberOfPlate=" + numberOfPlate +
+                ", yearOfImmatricolation=" + yearOfImmatricolation +
+                '}';
+    }
 }
